@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  background: whitesmoke;
+}
+
+.nav span {
+  font-weight: 600;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
