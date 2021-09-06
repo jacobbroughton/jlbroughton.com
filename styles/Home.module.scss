@@ -1,0 +1,64 @@
+@import "../styles/variables";
+
+.container {
+  @include page-container;
+}
+
+.introduction {
+  @include page-header;
+}
+
+.introduction .imageOfMeParent {
+  max-width: 250px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.introduction .imageOfMeParent .imageOfMe {
+  filter: brightness(1.05);
+}
+
+
+// About
+.about {}
+
+.about h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: $lightgrey;
+}
+
+
+// @media screen and (min-width: 640px) {
+//   .introduction, .about {
+//     padding-right: 2rem;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .introduction, .about {
+//     padding-right: 5rem;
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .introduction, .about {
+//     padding-right: 8rem;
+//   }
+// }
+// @media screen and (min-width: 1280px) {
+//   .introduction, .about {
+//     padding-right: 12rem;
+//   }
+// }
+
+// @media screen and (max-width: 639px) {
+//   .introduction, .about {
+//     padding-right: 0;
+//   }
+// }

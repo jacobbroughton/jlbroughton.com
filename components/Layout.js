@@ -1,7 +1,8 @@
 import React from 'react'
 import Meta from "./Meta"
 import Nav from "./Nav"
-import styles from "../styles/Layout.module.css"
+import Footer from "./Footer"
+import styles from "../styles/Layout.module.scss"
 
 const Layout = ({children}) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({children}) => {
         <Meta/>
         {children}
       </main>
+      <Footer/>
     </>
   )
 }

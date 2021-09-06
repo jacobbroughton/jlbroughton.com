@@ -1,0 +1,18 @@
+@import "../styles/variables";
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons .socialLink {
+  width: 25px;
+}
+
+.socialIcons svg {
+  fill: $lightgrey;
+}
+
+.socialIcons svg:hover {
+  // fill: #333;
+}
