@@ -12,14 +12,14 @@ const ProjectListItem = ({ project }) => {
             <h3>{project.name}</h3>
           </a>
         </Link>
-        <p>{project.description}</p>
+        <p>{project.excerpt}</p>
         <Link  href={`/portfolio/${project.slug}`}>
           <a className={projectListItemStyles.readMore}>
             Read More
           </a>
         </Link> 
       </div>
-      <Image src="https://via.placeholder.com/150x300" height={150} width={300}/>
+      <Image alt="" src="https://via.placeholder.com/150x300" height={150} width={300}/>
     </article>
   )
 }
