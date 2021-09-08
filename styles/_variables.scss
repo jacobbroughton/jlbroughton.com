@@ -4,6 +4,9 @@ $max-container-width: 800px;
 // Colors
 $lightgrey: #6b7280;
 
+// Breakpoints
+$mobile-bp: 767px;
+
 
 
 // Mixins 
@@ -31,7 +34,38 @@ $lightgrey: #6b7280;
       padding-right: 8rem;
   }
   @media screen and (min-width: 1280px) {
-      padding-right: 12rem;
+      padding-right: 10rem;
+  }
+
+  @media screen and (max-width: 639px) {
+      padding-right: 0;
+  }
+}
+
+@mixin project-container { 
+  max-width: $max-container-width;
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 0;
+  gap: 8rem;
+
+  @media screen and (min-width: 640px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   @media screen and (max-width: 639px) {

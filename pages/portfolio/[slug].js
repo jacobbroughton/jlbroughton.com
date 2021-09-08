@@ -1,43 +1,67 @@
 import React from 'react'
-import server from "../../config/index"
+import fs from "fs"
+import path from "path"
+import matter from "gray-matter"
+import marked from "marked"
+import Layout from "../../components/Layout"
+import Image from "next/image"
+import projectStyles from "../../styles/Project.module.scss"
 
-const project = ({ project }) => {
+const project = ({ frontmatter, slug, project }) => {
+
+  const {title, coverImage, link} = frontmatter
+
+  // const { name, description, technicalDetails, task, link, slug } = project
+
+  // parseMarkdown(`../../_content/${slug}.md`)
+
   return (
-    <article>
-      <h1>{project.name}</h1>
-      <p>{project.slug}</p>
-    </article>
+    <Layout>
+      <article className={projectStyles.project}>
+        <div className={projectStyles.header}>
+          <h1>{title}</h1>
+        </div>
+        <section className={projectStyles.body}>
+          <div dangerouslySetInnerHTML={{__html: marked(project)}}>
+
+          </div>
+          <a className={projectStyles.viewProjectLink} href={link}>View project here</a>
+        </section>
+      </article>
+    </Layout>
+
   )
 }
 
-export const getStaticProps = async (context) => {
-  const res = await fetch(`${server}/api/projects/${context.params.slug}`)
-
-  const project = await res.json()
-
-  return {
-    props: {
-      project
-    }
-  }
-}
-
 export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/api/projects`)
+  const files = fs.readdirSync(path.join('_content'))
 
-  const projects = await res.json()
-
-  const slugs = projects.map(project => project.slug)
-
-  const paths = slugs.map(slug => ({
+  const paths = files.map(filename => ({
     params: {
-      slug
+      slug: filename.replace('.md', '')
     }
   }))
 
+  console.log(paths)
+
   return {
-    paths, 
+    paths,
     fallback: false 
+  }
+}
+
+// Able to get params: slug now that we've gotten the static paths
+export const getStaticProps = async ({ params: { slug } }) => {
+  const markdownWithMeta = fs.readFileSync(path.join('_content', slug + '.md'), 'utf-8')
+
+  const {data: frontmatter, content: project} = matter(markdownWithMeta)
+
+  return {
+    props: {
+      frontmatter,
+      slug,
+      project
+    }
   }
 }
 

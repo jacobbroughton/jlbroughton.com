@@ -9,17 +9,20 @@ const ProjectListItem = ({ project }) => {
       <div className={projectListItemStyles.textParent}>
         <Link href={`/portfolio/${project.slug}`} passHref>
           <a>
-            <h3>{project.name}</h3>
+            <h3>{project.frontmatter.title}</h3>
           </a>
         </Link>
-        <p>{project.excerpt}</p>
+        <p>{project.frontmatter.excerpt}</p>
         <Link  href={`/portfolio/${project.slug}`}>
           <a className={projectListItemStyles.readMore}>
             Read More
           </a>
         </Link> 
       </div>
-      <Image alt="" src="https://via.placeholder.com/150x300" height={150} width={300}/>
+      <div className={projectListItemStyles.imageParent}>
+        <Image alt="" src={project.frontmatter.coverImage} layout="responsive" height={200} width={320} />
+      </div>
+      
     </article>
   )
 }

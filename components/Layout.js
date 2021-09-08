@@ -16,7 +16,7 @@ const Layout = ({children}) => {
 
   return (
     <>
-      <Nav/>
+      {/* <Nav/> */}
         <motion.main
           initial="hidden" // setting initial state to variants.hidden
           animate="enter" // animated state to variants.enter
@@ -27,7 +27,7 @@ const Layout = ({children}) => {
         >
           {children}
         </motion.main>
-      <Footer/>
+      {/* <Footer/> */}
       </>
   )
 }

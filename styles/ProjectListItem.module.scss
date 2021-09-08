@@ -22,7 +22,23 @@
   color: $lightgrey;
 }
 
+.projectListItem .imageParent {
+  width: 40%;
+  height: auto;
+  align-self: center;
+}
+
 .projectListItem .readMore {
   text-decoration: underline;
   color: $lightgrey;
+}
+
+@media screen and (max-width: 640px) {
+  .projectListItem {
+    flex-direction: column;
+  }
+
+  .projectListItem .imageParent {
+    width: 100%;
+  }
 }

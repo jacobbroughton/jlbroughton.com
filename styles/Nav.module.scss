@@ -17,6 +17,10 @@
   margin: 0 auto;
 }
 
+.nav .initials {
+  display: none;
+}
+
 .nav span {
   font-weight: 600;
 }
@@ -63,5 +67,13 @@
 @media screen and (max-width: 639px) {
   .nav {
     padding: 20px 30px;
+  }
+
+  .nav .fullName {
+    display: none;
+  }
+
+  .nav .initials {
+    display: inline-block;
   }
 }

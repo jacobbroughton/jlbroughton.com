@@ -1,0 +1,51 @@
+@import "../styles/variables";
+
+.project {
+  @include project-container;
+  gap: 25px;
+  align-self: center;
+}
+
+.project .header {
+  @include page-header;
+  align-items: center;
+}
+
+.project .body {
+  margin-top: 30px;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 20px;  
+    
+    a {
+    font-weight: 600;
+
+      &::before, &::after  {
+        content: '`';
+        text-decoration: none;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .viewProjectLink {
+    font-size: 1rem;
+    text-decoration: underline;
+    
+    &::after {
+      content: ' ->';
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+  }
+}

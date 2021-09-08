@@ -21,8 +21,14 @@ const Nav = () => {
   return (
     <nav className={navStyles.nav}>
       <div className={navStyles.container}>
-        <Link href="/" scroll={false}>
-          Jacob Broughton
+        <Link href="/" scroll={false} passHref>
+          <a>
+            <p>
+              <span className={navStyles.fullName}>Jacob Broughton</span>
+              <span className={navStyles.initials}>JB</span>
+            </p>
+          </a>
+
         </Link>
         <ul>
           {linksList.map(linkItem => 

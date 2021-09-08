@@ -1,6 +1,7 @@
 import { projects } from "../../../projects"
 
 const handler = (req, res) => {
+
   const { slug } = req.query
 
   const filtered = projects.filter(project => project.slug === slug)
