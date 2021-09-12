@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_ENV=production next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,6 +19,8 @@
     "remark-html": "^14.0.1",
     "remark-parse": "^10.0.0",
     "sass": "^1.39.0",
+    "sharp": "^0.29.1",
+    "styled-components": "^5.3.1",
     "unified": "^10.1.0"
   },
   "devDependencies": {

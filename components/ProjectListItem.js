@@ -7,20 +7,20 @@ const ProjectListItem = ({ project }) => {
   return (
     <article className={projectListItemStyles.projectListItem}>
       <div className={projectListItemStyles.textParent}>
-        <Link href={`/portfolio/${project.slug}`} passHref>
+        <Link href={`/portfolio/${project.slug}`} scroll={false} passHref>
           <a>
             <h3>{project.frontmatter.title}</h3>
           </a>
         </Link>
         <p>{project.frontmatter.excerpt}</p>
-        <Link  href={`/portfolio/${project.slug}`}>
+        <Link  href={`/portfolio/${project.slug}`}scroll={false} > 
           <a className={projectListItemStyles.readMore}>
             Read More
           </a>
         </Link> 
       </div>
       <div className={projectListItemStyles.imageParent}>
-        <Image alt="" src={project.frontmatter.coverImage} layout="responsive" height={200} width={320} />
+        <Image alt="" src={project.frontmatter.coverImage} layout="responsive" height={200} width={320} placeholder="blur" priority={true} blurDataURL={project.frontmatter.coverImage}/>
       </div>
       
     </article>

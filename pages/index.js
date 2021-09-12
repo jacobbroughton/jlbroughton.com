@@ -16,14 +16,10 @@ export default function Home() {
       
       <section className={styles.introduction}>
         <div className={styles.imageOfMeParent}>
-          <Image alt="A picture of me" src={meImage} layout="responsive" className="image" placeholder="blur" />
+          <Image alt="A picture of me" src={meImage} layout="responsive" className="image" placeholder="blur" priority={true}/>
         </div>
         <h1>Hello, i&apos;m Jacob 👋</h1>
         <p>I&apos;m a frontend web developer at XVentBox Ventilation Systems, and living in Charlotte, NC.</p>
-        {/* <div className={styles.socialIcons}>
-          <SVGIcon type="linkedIn"/>
-          <SVGIcon type="github"/>
-        </div> */}
         <SocialIcons/>
       </section>
 
