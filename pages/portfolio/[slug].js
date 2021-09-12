@@ -4,7 +4,7 @@ import path from "path"
 import matter from "gray-matter"
 import marked from "marked"
 import Layout from "../../components/Layout"
-import Image from "next/image"
+// import Image from "next/image"
 import projectStyles from "../../styles/Project.module.scss"
 
 const project = ({ frontmatter, slug, project }) => {

@@ -4,24 +4,22 @@
   @include page-container;
 }
 
-.introduction {
+.header {
   @include page-header;
 }
 
-.introduction .imageOfMeParent {
+.header .imageOfMeParent {
   max-width: 250px;
   border-radius: 3px;
   overflow: hidden;
 }
 
-.introduction .imageOfMeParent .imageOfMe {
+.header .imageOfMeParent .imageOfMe {
   filter: brightness(1.05);
 }
 
 
 // About
-.about {}
-
 .about h2 {
   font-size: 2rem;
   font-weight: 400;
@@ -33,32 +31,33 @@
   color: $lightgrey;
 }
 
+@include for-tablet-only {
+  .header .imageOfMeParent {
+    max-width: 200px;
+  }
 
-// @media screen and (min-width: 640px) {
-//   .introduction, .about {
-//     padding-right: 2rem;
-//   }
-// }
+  // About
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .about p {
+    font-size: 1rem;
+  }
+}
 
-// @media screen and (min-width: 768px) {
-//   .introduction, .about {
-//     padding-right: 5rem;
-//   }
-// }
-
-// @media screen and (min-width: 1024px) {
-//   .introduction, .about {
-//     padding-right: 8rem;
-//   }
-// }
-// @media screen and (min-width: 1280px) {
-//   .introduction, .about {
-//     padding-right: 12rem;
-//   }
-// }
-
-// @media screen and (max-width: 639px) {
-//   .introduction, .about {
-//     padding-right: 0;
-//   }
-// }
+@include for-phone-only {
+  
+  .header .imageOfMeParent {
+    max-width: 150px;
+  }
+  
+  // About
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+  }
+}

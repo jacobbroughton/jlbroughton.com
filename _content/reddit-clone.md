@@ -1,6 +1,6 @@
 ---
 title: 'Reddit Clone'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel fringilla est ullamcorper eget nulla.'
+excerpt: "This project is my attempt at recreating a reddit-like experience. Users can create / edit / delete posts, add comments, vote on comments and posts, and create their own 'subreddits'."
 coverImage: '/images/projects/reddit-clone/reddit-clone-1.png'
 id: 2
 link: "https://reddit-clone-jb.netlify.app/"

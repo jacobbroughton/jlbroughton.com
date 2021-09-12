@@ -9,41 +9,30 @@
   align-items: center;
 }
 
-
-@media screen and (min-width: 640px) {
-  .main {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main {
-    padding-left: 13rem;
-    padding-right: 13rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .main {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 639px) {
+@include for-phone-only {
   .main {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@include for-tablet-only {
+  .main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@include for-small-window-only {
+  .main {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@include for-desktop-up {
+  .main {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 }

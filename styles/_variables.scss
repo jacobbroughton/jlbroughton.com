@@ -8,13 +8,26 @@ $lightgrey: #6b7280;
 $mobile-bp: 767px;
 
 
-
-// Mixins 
-@mixin h1 {
-  font-size: 3rem;
-  font-weight: 500;
+// Media queries 
+@mixin for-phone-only { 
+  @media screen and (max-width: 639px) { @content };
 }
 
+@mixin for-tablet-only {
+  @media screen and (min-width: 640px) and (max-width: 767px) { @content };
+}
+
+@mixin for-small-window-only {
+  @media screen and (min-width: 768px) and (max-width: 1279px) { @content };
+}
+
+@mixin for-desktop-up {
+  @media screen and (min-width: 1280px) { @content };
+}
+
+
+
+// Mixins 
 @mixin page-container { 
   max-width: $max-container-width;
   display: flex;
@@ -22,23 +35,26 @@ $mobile-bp: 767px;
   padding: 7rem 0;
   gap: 8rem;
 
-  @media screen and (min-width: 640px) {
-    padding-right: 2rem;
+  @include for-phone-only {
+    padding-right: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 6rem;
   }
 
-  @media screen and (min-width: 768px) {
-      padding-right: 5rem;
+  @include for-tablet-only {
+    padding-right: 3.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 7rem;
+  }
+    
+  @include for-small-window-only {
+    padding-right: 5rem;
   }
 
-  @media screen and (min-width: 1024px) {
-      padding-right: 8rem;
-  }
-  @media screen and (min-width: 1280px) {
-      padding-right: 10rem;
-  }
-
-  @media screen and (max-width: 639px) {
-      padding-right: 0;
+  @include for-desktop-up {
+    padding-right: 10rem;
   }
 }
 
@@ -49,27 +65,24 @@ $mobile-bp: 767px;
   padding: 7rem 0;
   gap: 8rem;
 
-  @media screen and (min-width: 640px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  @include for-phone-only {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  @media screen and (min-width: 768px) {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  @include for-tablet-only {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+    
+  @include for-small-window-only {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
-  @media screen and (min-width: 1024px) {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  @media screen and (min-width: 1280px) {
+  @include for-desktop-up {
     padding-left: 6rem;
     padding-right: 6rem;
-  }
-
-  @media screen and (max-width: 639px) {
-      padding-right: 0;
   }
 }
 
@@ -87,5 +100,25 @@ $mobile-bp: 767px;
   p {
     font-size: 1.75rem;
     font-weight: 300;
+  }
+
+  @include for-tablet-only {
+    h1 {
+      font-size: 2.5rem;
+    }  
+  
+    p {
+      font-size: 1.5rem;
+    }  
+  }
+
+  @include for-phone-only {
+    h1 {
+      font-size: 2.2rem;
+    }  
+  
+    p {
+      font-size: 1.2rem;
+    }  
   }
 }

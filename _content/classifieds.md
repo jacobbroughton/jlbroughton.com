@@ -1,6 +1,6 @@
 ---
 title: 'Classifieds'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel fringilla est ullamcorper eget nulla.'
+excerpt: 'This project was my attempt to replicate the functionality / look of the facebook marketplace UI.'
 coverImage: '/images/projects/classifieds/classifieds-1.png'
 id: 3
 link: "https://ecommerce-webapp-jb.herokuapp.com/"
