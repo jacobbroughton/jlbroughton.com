@@ -1,9 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React, { useEffect } from 'react'
+import { useTheme, useThemeUpdate } from "../context/themeProvider"
 import Link from "next/link"
 import navStyles from "../styles/Nav.module.scss"
 import { useRouter } from "next/router"
 import { AnimateSharedLayout, motion } from "framer-motion"
-import { useTheme, setTheme } from "../utils/theme"
+import { saveState, loadState } from "../utils/localStorage"
+import SVGIcon from "./SVGIcon"
+
 
 const Nav = () => {
 
@@ -20,14 +23,22 @@ const Nav = () => {
     }
   ]
 
+  const darkMode = useTheme()
+  const toggleTheme = useThemeUpdate()
+
+  const handleDarkToggle = () => {
+    saveState(!darkMode, "darkMode")
+    toggleTheme()
+  }
+
   return (
     <AnimateSharedLayout>
-    <nav className={navStyles.nav}>
+    <nav className={`${navStyles.nav} ${darkMode ? 'dark' : ''}`}>
       <div className={navStyles.container}>
         <Link href="/" scroll={false} passHref>
           <a>
             <p>
-              <span className={navStyles.fullName}>Jacob Broughton</span>
+              <span className={navStyles.fullName}>Jacob Broughton {darkMode ? 'dark' : 'light'}</span>
               <span className={navStyles.initials}>JB</span>
             </p>
           </a>
@@ -52,6 +63,12 @@ const Nav = () => {
               </Link>
             </li>  
           )}
+          <button onClick={() => handleDarkToggle("dark")}>
+            <SVGIcon type="darkmode" className={navStyles.themeIcon}/>
+          </button>
+          <button onClick={() => handleDarkToggle("light")}>
+            <SVGIcon type="lightmode" className={navStyles.themeIcon}/>
+          </button>
         </ul>
       </div>
     </nav>
