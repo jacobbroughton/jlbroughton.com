@@ -28,7 +28,7 @@ const SVGIcon = ({ type, size }) => {
     )
   }
 
-  if(type === "github") {
+  else if(type === "github") {
     return (
       <svg 
         version="1.1" 
@@ -56,7 +56,7 @@ const SVGIcon = ({ type, size }) => {
     )
   }
 
-  if (type === "darkmode") {
+  else if (type === "darkmode") {
     return (
       <svg        
         id="Capa_1" 
@@ -78,7 +78,7 @@ const SVGIcon = ({ type, size }) => {
     )
   }
 
-  if (type === "lightmode") {
+  else if (type === "lightmode") {
     return (
       <svg 
         version="1.1" 

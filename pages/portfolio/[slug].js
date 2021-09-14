@@ -25,7 +25,7 @@ const project = ({ frontmatter, slug, project }) => {
           <div dangerouslySetInnerHTML={{__html: marked(project)}}>
 
           </div>
-          <a className={projectStyles.viewProjectLink} href={link}>View project here</a>
+          {/* <a className={projectStyles.viewProjectLink} href={link}>View project here</a> */}
         </section>
       </article>
     </Layout>

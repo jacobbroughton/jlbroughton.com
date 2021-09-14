@@ -2,10 +2,12 @@
 $max-container-width: 800px;
 
 // Colors
-$lightgrey: #6b7280;
+$dark-primary: #141414;
+$light-primary: #fbfbfb;
+$dm-text: #fff;
+$lm-text: #000;
 
-// Breakpoints
-$mobile-bp: 767px;
+$lightgrey: #6b7280;
 
 
 // Media queries 
@@ -66,8 +68,10 @@ $mobile-bp: 767px;
   gap: 8rem;
 
   @include for-phone-only {
+    padding-top: 3rem;
     padding-left: 0;
     padding-right: 0;
+    gap: 0;
   }
 
   @include for-tablet-only {

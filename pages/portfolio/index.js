@@ -48,7 +48,6 @@ export const getStaticProps = async (context) => {
     }
   })
 
-  console.log(projects)
 
   return {
     props: {

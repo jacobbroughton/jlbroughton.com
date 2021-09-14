@@ -6,7 +6,7 @@ import Meta from "../components//Meta"
 import { AnimatePresence } from "framer-motion"
 import server from "../config/index"
 import Router from "next/router"
-import { ThemeProvider } from "../context/themeProvider"
+// import { ThemeProvider } from "../context/themeProvider"
 import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps, router }) {
@@ -33,10 +33,9 @@ function MyApp({ Component, pageProps, router }) {
     });
   }, [])
 
-  
 
   return (
-    <ThemeProvider>
+    <>
       <Meta/>
       <Nav/>
       <AnimatePresence
@@ -47,7 +46,7 @@ function MyApp({ Component, pageProps, router }) {
         <Component {...pageProps} key={url}/>
       </AnimatePresence>
       <Footer/>
-    </ThemeProvider>
+    </>
 
   )
 }
