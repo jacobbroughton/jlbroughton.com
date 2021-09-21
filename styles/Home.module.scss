@@ -18,6 +18,26 @@
   filter: brightness(1.05);
 }
 
+.header .socialAndCTA {
+  display: flex;
+  gap: 15px;
+
+   .CTA {
+    height: 25px;
+    background: var(--color-text-secondary);
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.295);
+  }
+
+  .CTA:hover {
+    text-decoration: underline;
+  }
+}
+
 
 // About
 .about h2 {

@@ -2,6 +2,7 @@ import React from "react"
 import Meta from "../components/Meta"
 import styles from '../styles/Home.module.scss'
 import Image from "next/image"
+import meImage from "/public/images/me.jpeg"
 import SocialIcons from "../components/SocialIcons"
 import Layout from "../components/Layout"
 
@@ -15,11 +16,16 @@ export default function Home() {
         
         <section className={styles.header}>
           <div className={styles.imageOfMeParent}>
-            <Image alt="A picture of me" src="/images/me.jpeg" layout="responsive" height={300} width={300} className="image" placeholder="blur" blurDataURL="/images/me.jpeg" priority={true}/>
+            <Image alt="A picture of me" src={meImage} layout="responsive" height={300} width={300} className="image" placeholder="blur" blurDataURL={meImage} priority={true}/>
           </div>
           <h1>Hello, i&apos;m Jacob 👋</h1>
           <p>I&apos;m a frontend web developer at XVentBox Ventilation Systems, and living in Charlotte, NC.</p>
-          <SocialIcons/>
+          <div className={styles.socialAndCTA}>
+            <SocialIcons/>
+            <a className={styles.CTA} href="mailto:jacobbroughtondev@gmail.com">
+              Get in touch
+            </a>
+          </div>
         </section>
 
         <section className={styles.about}>

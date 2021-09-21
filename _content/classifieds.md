@@ -12,6 +12,13 @@ link: "https://ecommerce-webapp-jb.herokuapp.com/"
 
 ### Technical Details
 
+```js
+{
+  let name = 'Jacob'
+  console.log(name) // Jacob
+}
+```
+
 As for technologies / libraries used, this project uses [React.js](https://reactjs.org/) for the front-end, [Express.js](https://expressjs.com/) for routing, and [Node.js](https://nodejs.org/en/) for the backend server. For state, I used the [React Context API](https://reactjs.org/docs/context.html). If i could do it all over again, i'd integrate my own authentication instead of using Auth0, as well as Redux instead of the context API.
 
 ![alt text here](/images/projects/classifieds/classifieds-2.png)

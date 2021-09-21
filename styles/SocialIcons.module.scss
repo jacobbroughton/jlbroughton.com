@@ -2,7 +2,22 @@
 
 .socialIcons {
   display: flex;
+  align-items: center;
   gap: 15px;
+}
+
+.socialIcons .CTA {
+  height: 25px;
+  background: var(--color-bg-toggle);
+  color: #fff;
+  padding: 0px 8px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons .CTA:hover {
+  text-decoration: underline;
 }
 
 .socialIcons .socialLink {

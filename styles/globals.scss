@@ -25,6 +25,11 @@ body[data-theme="light"] {
   --color-text-secondary: #076963;
   --color-bg-primary: #fff;
   --color-bg-toggle: #1e90ff;
+  --color-bg-code: #f7f7f7;
+  --color-text-code: black;
+  --color-string-code: crimson;
+  --color-comment-code: green;
+  --color-function-code: #c0c000;
 }
 
 body[data-theme="dark"] {
@@ -32,6 +37,11 @@ body[data-theme="dark"] {
   --color-text-secondary: #ff6b00;
   --color-bg-primary: #15232d;
   --color-bg-toggle: #a9a9a9;
+  --color-bg-code: #243d4f;
+  --color-text-code: white;
+  --color-string-code: rgb(255, 64, 102);
+  --color-comment-code: rgb(0, 206, 0);
+  --color-function-code: yellow;
 }
 
 body {
@@ -48,4 +58,35 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+pre {
+  background-color: var(--color-bg-code);
+  color: var(--color-text-code);
+  padding: 1rem;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  transition: background 0.25s ease-in-out;
+}
+
+pre code {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+pre .hljs-keyword {
+  font-weight: 700;
+}
+
+pre .hljs-string {
+  color: var(--color-string-code);
+}
+
+pre .hljs-comment {
+  color:var(--color-comment-code);
+}
+
+pre .function_ {
+  color: var(--color-function-code);
 }
