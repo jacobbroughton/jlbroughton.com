@@ -24,6 +24,7 @@ body[data-theme="light"] {
   --color-text-primary: #27201a;
   --color-text-secondary: #076963;
   --color-bg-primary: #fff;
+  --color-bg-primary-rgb: rgba(255, 255, 255, 0.85);
   --color-bg-toggle: #1e90ff;
   --color-bg-code: #f7f7f7;
   --color-text-code: black;
@@ -36,6 +37,7 @@ body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
   --color-text-secondary: #ff6b00;
   --color-bg-primary: #15232d;
+  --color-bg-primary-rgb: rgba(21, 35, 45, 0.85);
   --color-bg-toggle: #a9a9a9;
   --color-bg-code: #243d4f;
   --color-text-code: white;
