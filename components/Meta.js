@@ -14,11 +14,11 @@ const Meta = ({ title, description, keywords }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content="www.jlbroughton.com" />
-      <meta name="image" property="og:image" content="/me.jpeg" />
+      <meta name="image" property="og:image" content="images/me.jpeg" />
       <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:secure_url" content="/me.jpeg" /> 
-      <meta property="og:image:width" content="640" /> 
-      <meta property="og:image:height" content="442" />
+      <meta property="og:image:secure_url" content="images/me.jpeg" /> 
+      <meta property="og:image:width" content="300" /> 
+      <meta property="og:image:height" content="300" />
     </Head>
   )
 }

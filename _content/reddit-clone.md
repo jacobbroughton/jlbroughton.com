@@ -1,9 +1,9 @@
 ---
-title: 'Reddit Clone'
+title: 'Zeddit (Reddit Inspired)'
 excerpt: "This project is my attempt at recreating a reddit-like experience. Users can create / edit / delete posts, add comments, vote on comments and posts, and create their own 'subreddits'."
 coverImage: '/images/projects/reddit-clone/reddit-clone-1.png'
 id: 2
-link: "https://reddit-clone-jb.netlify.app/"
+link: "https://zeddit.netlify.app/"
 ---
 
 <p>This project is my attempt at recreating a reddit-like experience. Users can create / edit / delete posts, add comments, vote on comments and posts, and create their own 'subreddits'. This has been the most challenging project i've faced thus far, my motivation to continue this project over the months of it's development really stems from the pursuit of learning as much as possible. Its also rather ongoing, but 99% complete (I think, i tend to add more as i feel like i'm just finishing up)</p>
