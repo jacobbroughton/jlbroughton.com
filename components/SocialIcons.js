@@ -1,6 +1,5 @@
 import React from 'react'
 import SVGIcon from "../components/SVGIcon"
-import Link from "next/link"
 import socialIconsStyles from "../styles/SocialIcons.module.scss"
 
 const SocialIcons = () => {

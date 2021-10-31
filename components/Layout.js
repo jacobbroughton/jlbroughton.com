@@ -1,9 +1,5 @@
 import React from 'react'
-import Meta from "./Meta"
-import Nav from "./Nav"
-import Footer from "./Footer"
 import { motion } from "framer-motion"
-import router from "next/router"
 import styles from "../styles/Layout.module.scss"
 
 const Layout = ({children}) => {

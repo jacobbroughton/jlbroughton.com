@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from "next/head"
-// import meImage from "/me.jpeg"
+// import meImage from "/public/images/me.jpeg"
 
 const Meta = ({ title, description, keywords }) => {
   return (
@@ -13,12 +13,13 @@ const Meta = ({ title, description, keywords }) => {
       <title>{title}</title>
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content="www.jlbroughton.com" />
-      <meta name="image" property="og:image" content="images/me.jpeg" />
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:secure_url" content="images/me.jpeg" /> 
-      <meta property="og:image:width" content="300" /> 
-      <meta property="og:image:height" content="300" />
+      <meta property="og:url" content="https://www.jlbroughton.com" />
+      <meta property="og:image" content="https://www.jlbroughton.com/images/me.jpeg" />
+      <meta property="og:image:secure_url" content="https://www.jlbroughton.com/images/me.jpeg" /> 
+      <meta property="og:image:width" content="700" /> 
+      <meta property="og:image:height" content="700" />
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:image" content="https://www.jlbroughton.com/images/me.jpeg"/>
     </Head>
   )
 }

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import SVGIcon from "./SVGIcon";
-import navStyles from "../styles/Nav.module.scss";
 import styled from "@emotion/styled"
 // import { saveState } from "../utils/localStorage";
 
