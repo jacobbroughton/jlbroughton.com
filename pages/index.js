@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <h1>Hello, i&apos;m Jacob 👋</h1>
           <p>
-            I&apos;m a frontend web developer at XVentBox Ventilation Systems,
+            I&apos;m a web developer at Lowe&apos;s Companies, Inc.,
             and living in Charlotte, NC.
           </p>
           <div className={styles.socialAndCTA}>
@@ -41,18 +41,15 @@ export default function Home() {
         <section className={styles.about}>
           <h2>About</h2>
           <p>
-            I spend most of my time working with <strong>React.js</strong>,{" "}
+          A little over 3.5 years ago I started this journey of learning the ways of the web and it all 
+          started with a &apos;Full Stack Web Development&apos; bootcamp at UNCC back in 2018.
+          I spend most of my time working with <strong>React.js</strong>,{" "}
             <strong>Redux</strong>, and <strong>Node.js</strong> /{" "}
-            <strong>Express</strong> / <strong>MySQL</strong> backends. At work,
-            i&apos;m coming to a close on a web app i&apos;ve been working on,
-            using those same technologies plus <strong>Three.js</strong> for 3D
-            interactions.
+            <strong>Express</strong> / <strong>MySQL</strong> backends.
           </p>
           <p>
-            While i&apos;m not working, code-wise, i&apos;ve been working on a
-            reddit clone as a personal project for the last few months, that
-            project is using React.js, Redux, Node.js, Express.js, Passport.js, and MySQL. On my free time away from the computer, I love to mountain bike, mainly jumping
-            and riding downhill trails. 
+            While i&apos;m not working, I love to mountain bike. Mainly jumping
+            and riding downhill / enduro trails. Just like coding, you fall and you get right back up and do it again the next day (hopefully without the falling part).
           </p>
         </section>
       </div>
