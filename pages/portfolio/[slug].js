@@ -42,7 +42,7 @@ const project = ({ frontmatter, slug, project }) => {
 }
 
 export const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join('_content'))
+  const files = fs.readdirSync(path.join('_projects'))
 
   const paths = files.map(filename => ({
     params: {
@@ -61,7 +61,7 @@ export const getStaticPaths = async () => {
 // Able to get params: slug now that we've gotten the static paths
 export const getStaticProps = async ({ params: { slug } }) => {
 
-  const markdownWithMeta = fs.readFileSync(path.join('_content', slug + '.md'), 'utf-8')
+  const markdownWithMeta = fs.readFileSync(path.join('_projects', slug + '.md'), 'utf-8')
 
   const {data: frontmatter, content: project} = matter(markdownWithMeta)
 

@@ -6,13 +6,12 @@ import Layout from "../../components/Layout"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import project from './[slug]'
 import {sortById} from "../../utils/sortById"
 
 const portfolio = ({ projects }) => {
   return (
     <Layout>
-      <div className={portfolioStyles.portfolio}>
+      <div className={portfolioStyles.container}>
         <section className={portfolioStyles.header}>
           <h1>Projects 📚</h1>
           <p>A curated collection of projects that i&apos;m personally proud of, or helped shape me as a developer.</p>
@@ -26,7 +25,7 @@ const portfolio = ({ projects }) => {
 
 export const getStaticProps = async (context) => {
 
-  const files = fs.readdirSync(path.join('_content'))
+  const files = fs.readdirSync(path.join('_projects'))
 
   // Get slug and frontmatter from files
   const projects = files.map(filename => {
@@ -35,7 +34,7 @@ export const getStaticProps = async (context) => {
  
     // gives unparsed markdown, exactly whats in the files
     const markdownWithMeta = fs.readFileSync(
-      path.join('_content', filename),
+      path.join('_projects', filename),
       'utf-8'
     )
 

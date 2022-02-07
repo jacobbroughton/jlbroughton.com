@@ -23,9 +23,11 @@
 }
 
 .projectListItem .imageParent {
-  width: 40%;
+  width: 45%;
   height: auto;
   align-self: center;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .projectListItem .readMore {
