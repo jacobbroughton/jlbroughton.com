@@ -9,7 +9,8 @@
 }
 
 .header .imageOfMeParent {
-  max-width: 250px;
+  width: 100%;
+  max-width: 260px;
   border-radius: 3px;
   overflow: hidden;
 }
@@ -51,9 +52,9 @@
 }
 
 @include for-tablet-only {
-  .header .imageOfMeParent {
-    max-width: 200px;
-  }
+  // .header .imageOfMeParent {
+  //   max-width: 200px;
+  // }
 
   // About
   .about h2 {
@@ -67,9 +68,9 @@
 
 @include for-phone-only {
   
-  .header .imageOfMeParent {
-    max-width: 150px;
-  }
+  // .header .imageOfMeParent {
+  //   // max-width: 150px;
+  // }
   
   // About
   .about h2 {

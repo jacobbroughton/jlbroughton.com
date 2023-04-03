@@ -4,16 +4,16 @@ import svgStyles from "../styles/SVGIcon.module.scss"
 
 const SVGIcon = ({ type, size }) => {
 
-  if(type === "linkedIn") {
+  if (type === "linkedIn") {
     return (
-      <svg 
-        version="1.1" 
-        id="Layer_1" 
-        x="0px" 
+      <svg
+        version="1.1"
+        id="Layer_1"
+        x="0px"
         y="0px"
-        viewBox="0 0 310 310" 
+        viewBox="0 0 310 310"
         className={svgStyles.small}
-        >
+      >
         <g id="XMLID_801_">
           <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
             C77.16,101.969,74.922,99.73,72.16,99.73z"/>
@@ -28,17 +28,17 @@ const SVGIcon = ({ type, size }) => {
     )
   }
 
-  else if(type === "github") {
+  else if (type === "github") {
     return (
-      <svg 
-        version="1.1" 
-        id="Capa_1" 
-        x="0px" 
+      <svg
+        version="1.1"
+        id="Capa_1"
+        x="0px"
         y="0px"
-        viewBox="0 0 512 512" 
+        viewBox="0 0 512 512"
         className={svgStyles.small}
-        // style="enable-background:new 0 0 512 512;" 
-        >
+      // style="enable-background:new 0 0 512 512;" 
+      >
         <g>
           <g>
             <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
@@ -54,15 +54,27 @@ const SVGIcon = ({ type, size }) => {
         </g>
       </svg>
     )
+  } else if (type === "youtube") {
+    return (
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 461.001 461.001" xmlSpace="preserve" className={svgStyles.small}>
+        <g>
+          <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+		c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+		C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+		c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+        </g>
+      </svg>
+    )
   }
 
   else if (type === "darkmode") {
     return (
-      <svg        
-        id="Capa_1" 
-        x="0px" 
+      <svg
+        id="Capa_1"
+        x="0px"
         y="0px"
-        viewBox="0 0 310 310" 
+        viewBox="0 0 310 310"
         className={svgStyles.small}
       >
         <g>
@@ -80,14 +92,14 @@ const SVGIcon = ({ type, size }) => {
 
   else if (type === "lightmode") {
     return (
-      <svg 
-        version="1.1" 
-        id="Capa_1" 
-        x="0px" 
+      <svg
+        version="1.1"
+        id="Capa_1"
+        x="0px"
         y="0px"
-        viewBox="0 0 310 310" 
+        viewBox="0 0 310 310"
         className={svgStyles.small}
-        >
+      >
         <g>
           <g>
             <path d="M204.8,97.6C191.2,84,172,75.2,151.2,75.2s-40,8.4-53.6,22.4c-13.6,13.6-22.4,32.8-22.4,53.6s8.8,40,22.4,53.6
@@ -110,7 +122,7 @@ const SVGIcon = ({ type, size }) => {
         </g>
         <g>
           <g>
-            <path d="M258,243.6l-22-22c-3.6-4-10.4-4-14.4,0s-4,10.4,0,14.4l22,22c4,4,10.4,4,14.4,0S262,247.6,258,243.6z"/>
+            <path d="M258,243.6l-22-22c-3.6-4-10.4-4-14.4,0s-4,10.4,0,14.4l22,22c4,4,10.4,4,14.4,0S262,247.6,258,243.6z" />
           </g>
         </g>
         <g>
@@ -122,7 +134,7 @@ const SVGIcon = ({ type, size }) => {
         <g>
           <g>
             <path d="M258.4,44.4c-4-4-10.4-4-14.4,0l-22,22c-4,4-4,10.4,0,14.4c3.6,4,10.4,4,14.4,0l22-22C262.4,54.8,262.4,48.4,258.4,44.4z"
-              />
+            />
           </g>
         </g>
         <g>
@@ -133,12 +145,12 @@ const SVGIcon = ({ type, size }) => {
         </g>
         <g>
           <g>
-            <path d="M80.4,221.6c-3.6-4-10.4-4-14.4,0l-22,22c-4,4-4,10.4,0,14.4s10.4,4,14.4,0l22-22C84.4,232,84.4,225.6,80.4,221.6z"/>
+            <path d="M80.4,221.6c-3.6-4-10.4-4-14.4,0l-22,22c-4,4-4,10.4,0,14.4s10.4,4,14.4,0l22-22C84.4,232,84.4,225.6,80.4,221.6z" />
           </g>
         </g>
         <g>
           <g>
-            <path d="M80.4,66.4l-22-22c-4-4-10.4-4-14.4,0s-4,10.4,0,14.4l22,22c4,4,10.4,4,14.4,0S84.4,70.4,80.4,66.4z"/>
+            <path d="M80.4,66.4l-22-22c-4-4-10.4-4-14.4,0s-4,10.4,0,14.4l22,22c4,4,10.4,4,14.4,0S84.4,70.4,80.4,66.4z" />
           </g>
         </g>
       </svg>

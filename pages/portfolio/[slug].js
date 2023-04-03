@@ -2,20 +2,18 @@ import React from 'react'
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import marked from "marked"
+import { marked } from "marked"
 import Layout from "../../components/Layout"
 import hljs from "highlight.js"
 import projectStyles from "../../styles/Project.module.scss"
 
 const project = ({ frontmatter, slug, project }) => {
 
-  const {title, coverImage, link} = frontmatter
-
-  console.log(marked.options)
+  const { title, coverImage, link } = frontmatter
 
   marked.setOptions({
-    highlight: function(code, lang) {
-      if(hljs.getLanguage(lang)) {
+    highlight: function (code, lang) {
+      if (hljs.getLanguage(lang)) {
         return hljs.highlight(lang, code).value
       } else {
         return hljs.highlightAuto(code).value
@@ -30,8 +28,8 @@ const project = ({ frontmatter, slug, project }) => {
           <h1>{title}</h1>
         </div>
         <section className={projectStyles.body}>
-          <div dangerouslySetInnerHTML={{__html: marked(project)}}>
-            
+          <div dangerouslySetInnerHTML={{ __html: marked(project) }}>
+
           </div>
           {/* <a className={projectStyles.viewProjectLink} href={link}>View project here</a> */}
         </section>
@@ -50,11 +48,9 @@ export const getStaticPaths = async () => {
     }
   }))
 
-  console.log(paths)
-
   return {
     paths,
-    fallback: false 
+    fallback: false
   }
 }
 
@@ -63,7 +59,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   const markdownWithMeta = fs.readFileSync(path.join('_projects', slug + '.md'), 'utf-8')
 
-  const {data: frontmatter, content: project} = matter(markdownWithMeta)
+  const { data: frontmatter, content: project } = matter(markdownWithMeta)
 
   return {
     props: {

@@ -1,0 +1,35 @@
+@import "../styles/variables";
+
+.container {
+  @include page-container;
+  width: 100%;
+}
+
+.container .header {
+  @include page-header;
+}
+
+.videoList {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+@include for-phone-only {
+  .video {
+    width: 100%;
+  }
+}

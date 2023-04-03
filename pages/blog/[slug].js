@@ -2,17 +2,17 @@ import Layout from "../../components/Layout"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import marked from "marked"
+import { marked } from "marked"
 import hljs from "highlight.js"
 
 
 function blog({ frontmatter, slug, blog }) {
 
-  const {title, coverImage, link} = frontmatter
+  const { title, coverImage, link } = frontmatter
 
   marked.setOptions({
-    highlight: function(code, lang) {
-      if(hljs.getLanguage(lang)) {
+    highlight: function (code, lang) {
+      if (hljs.getLanguage(lang)) {
         return hljs.highlight(lang, code).value
       } else {
         return hljs.highlightAuto(code).value
@@ -26,8 +26,8 @@ function blog({ frontmatter, slug, blog }) {
         <h1>{title}</h1>
       </div>
       <section>
-        <div dangerouslySetInnerHTML={{__html: marked(blog)}}>
-          
+        <div dangerouslySetInnerHTML={{ __html: marked(blog) }}>
+
         </div>
         {/* <a className={projectStyles.viewProjectLink} href={link}>View project here</a> */}
       </section>
@@ -53,8 +53,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMeta = fs.readFileSync(path.join('_blogs', slug + '.md'), 'utf-8')
-  
-  const {data: frontmatter, content: blog} = matter(markdownWithMeta)
+
+  const { data: frontmatter, content: blog } = matter(markdownWithMeta)
 
   return {
     props: {

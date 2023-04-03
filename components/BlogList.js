@@ -2,14 +2,12 @@ import Link from "next/link"
 
 function BlogList({ blogs }) {
 
-  console.log(blogs)
-
   return (
-    blogs.map(blog => {
+    blogs.map((blog, index) => {
       const { coverImage, excerpt, title } = blog.frontmatter
 
       return (
-        <Link href={`/blog/${blog.slug}`}>
+        <Link href={`/blog/${blog.slug}`} key={index}>
           <article>
             <h3>{title}</h3>
           </article>

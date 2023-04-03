@@ -18,10 +18,10 @@ const Nav = () => {
       path: "/portfolio",
       name: "Portfolio",
     },
-    // {
-    //   path: "/blog",
-    //   name: "Blog",
-    // }
+    {
+      path: "/youtube",
+      name: "Youtube",
+    }
   ];
 
   const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
@@ -33,35 +33,31 @@ const Nav = () => {
       <nav className={`${navStyles.nav}`}>
         <div className={navStyles.container}>
           <Link href="/" scroll={false} passHref>
-            <a>
-              <p>
-                <span className={navStyles.fullName}>Jacob Broughton</span>
-                <span className={navStyles.initials}>JB</span>
-              </p>
-            </a>
+            <p>
+              <span className={navStyles.fullName}>Jacob Broughton</span>
+              <span className={navStyles.initials}>JB</span>
+            </p>
           </Link>
           <ul>
             {linksList.map((linkItem) => (
               <li key={linkItem.name}>
                 <Link href={linkItem.path} scroll={false} passHref>
-                  <a>
-                    {linkItem.name}
-                    {router.pathname === linkItem.path && (
-                      <motion.div
-                        animate
-                        initial={false}
-                        className={navStyles.underline}
-                        layoutId={navStyles.underline}
-                        transition="linear"
-                      />
-                    )}
-                  </a>
+                  {linkItem.name}
+                  {router.pathname === linkItem.path && (
+                    <motion.div
+                      animate
+                      initial={false}
+                      className={navStyles.underline}
+                      layoutId={navStyles.underline}
+                      transition="linear"
+                    />
+                  )}
                 </Link>
               </li>
             ))}
-            
+
           </ul>
-          <ThemeToggle/>
+          <ThemeToggle />
         </div>
       </nav>
     </AnimateSharedLayout>

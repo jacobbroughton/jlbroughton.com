@@ -7,6 +7,9 @@ import SocialIcons from "../components/SocialIcons";
 import Layout from "../components/Layout";
 
 export default function Home() {
+
+  console.log(typeof meImage)
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -16,12 +19,11 @@ export default function Home() {
             <Image
               alt="A picture of me"
               src={meImage}
-              layout="responsive"
               height={300}
               width={300}
               className="image"
               placeholder="blur"
-              blurDataURL={meImage}
+              // blurDataURL={'/public/images/me.jpeg'}
               priority={true}
             />
           </div>
@@ -41,7 +43,7 @@ export default function Home() {
         <section className={styles.about}>
           <h2>About</h2>
           <p>
-          A little over 3.5 years ago I started this journey of learning the ways of the web and it all 
+          About 4 years ago I started this journey of learning the ways of the web and it all 
           started with a &apos;Full Stack Web Development&apos; bootcamp at UNCC back in 2018.
           I spend most of my time working with <strong>React.js</strong>,{" "}
             <strong>Redux</strong>, and <strong>Node.js</strong> /{" "}

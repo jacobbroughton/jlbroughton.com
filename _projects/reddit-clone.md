@@ -2,7 +2,7 @@
 title: 'Zeddit (Reddit Inspired)'
 excerpt: "This project is my attempt at recreating a reddit-like experience. Users can create / edit / delete posts, add comments, vote on comments and posts, and create their own 'subreddits'."
 coverImage: '/images/projects/reddit-clone/reddit-clone-1.png'
-id: 2
+id: 1
 link: "https://zeddit.netlify.app/"
 ---
 
