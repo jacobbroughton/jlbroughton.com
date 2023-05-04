@@ -9,6 +9,18 @@ import { sortById } from "../../utils/sortById"
 const youtube = () => {
 
   const videoArray = [
+    {title: "WTF Is The Array Push Method In Javascript?", link: "https://www.youtube.com/embed/krNHMZsHFJs"},
+    {title: "Got 1 Minute? Learn This Javascript Array Method 😎", link: "https://www.youtube.com/embed/y4hgD0hQTIM"},
+    {title: "How I Got A Developer Job Using LinkedIn 🧑‍💻", link: "https://www.youtube.com/embed/pjvlTZ90nuI"},
+    {title: "Strategies I Used To Get A Developer Job 📊", link: "https://www.youtube.com/embed/K_XqZbZKiIY"},
+    {title: "A Coding Bootcamp MIGHT Not Be Right For You 🤔", link: "https://www.youtube.com/embed/YuEh38GyXu0"},
+    {title: "A Practical Explanation Of The Array Map Method In Javascript", link: "https://www.youtube.com/embed/uOIg2WKHhA0"},
+    {title: "Beginners NEED To Understand This Programming Term", link: "https://www.youtube.com/embed/yTABFtiBGFk"},
+    {title: "React Guy Tries Svelte (First Impressions)", link: "https://www.youtube.com/embed/oMeXoU0CQTc"},
+    { title: 'Beginners Need To Understand This Programming Term', link: 'https://www.youtube.com/embed/yTABFtiBGFk' },
+    { title: 'React Guy Tries Svelte (First Impressions)', link: 'https://www.youtube.com/embed/oMeXoU0CQTc' },
+    { title: 'THIS Is The Perfect Beginner React Project', link: 'https://www.youtube.com/embed/I8Ws07OSc1c' },
+    { title: 'Build An Accordion In React From Scratch | ReactJS Tutorial', link: 'https://www.youtube.com/embed/Y6AfeQIgtVw' },
     { title: 'Build A On/Off Toggle With React In 6 Minutes', link: 'https://www.youtube.com/embed/6O_4p-H1-lY' },
     { title: 'Learn How To Build A Custom Right Click Menu / Context Menu in 8 Minutes', link: 'https://www.youtube.com/embed/moj-hTXBgz4' },
     { title: 'Master Table Sorting In React In 5 Minutes', link: 'https://www.youtube.com//embed/ran0d8WHTYs' },

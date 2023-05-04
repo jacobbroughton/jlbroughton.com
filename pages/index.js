@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Meta from "../components/Meta";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
@@ -8,7 +8,43 @@ import Layout from "../components/Layout";
 
 export default function Home() {
 
-  console.log(typeof meImage)
+  const [currentTime, setCurrentTime] = useState({
+    unit: 'years',
+    value: `${((new Date() - new Date(2018, 11, 26)) / (86400000 * 7 * 4 * 12)).toFixed(2)}`
+  })
+
+  function handleTimeUnitButtonClick() {
+    switch (currentTime.unit) {
+      case 'years': {
+        setCurrentTime({
+          unit: 'months',
+          value: (new Date() - new Date(2018, 11, 26)) / (86400000 * 7 * 4)
+        })
+        break
+      }
+      case 'months': {
+        setCurrentTime({
+          unit: 'weeks',
+          value: (new Date() - new Date(2018, 11, 26)) / (86400000 * 7)
+        })
+        break
+      }
+      case 'weeks': {
+        setCurrentTime({
+          unit: 'days',
+          value: (new Date() - new Date(2018, 11, 26)) / (86400000)
+        })
+        break
+      }
+      case 'days': {
+        setCurrentTime({
+          unit: 'years',
+          value: (new Date() - new Date(2018, 11, 26)) / (86400000 * 7 * 4 * 12)
+        })
+        break
+      }
+    }
+  }
 
   return (
     <Layout>
@@ -23,7 +59,6 @@ export default function Home() {
               width={300}
               className="image"
               placeholder="blur"
-              // blurDataURL={'/public/images/me.jpeg'}
               priority={true}
             />
           </div>
@@ -43,9 +78,12 @@ export default function Home() {
         <section className={styles.about}>
           <h2>About</h2>
           <p>
-          About 4 years ago I started this journey of learning the ways of the web and it all 
-          started with a &apos;Full Stack Web Development&apos; bootcamp at UNCC back in 2018.
-          I spend most of my time working with <strong>React.js</strong>,{" "}
+            <button className={styles.timePassedButton} onClick={handleTimeUnitButtonClick}>{currentTime.value.toLocaleString(undefined, {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            })}</button> {currentTime.unit} ago I started this journey of learning the ways of the web and it all
+            started with a &apos;Full Stack Web Development&apos; bootcamp at UNCC back in 2018.
+            I spend most of my time working with <strong>React.js</strong>,{" "}
             <strong>Redux</strong>, and <strong>Node.js</strong> /{" "}
             <strong>Express</strong> / <strong>MySQL</strong> backends.
           </p>

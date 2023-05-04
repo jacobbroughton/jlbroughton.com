@@ -2,7 +2,7 @@
 title: 'Classifieds'
 excerpt: 'This project was my attempt to replicate the functionality / look of the facebook marketplace UI.'
 coverImage: '/images/projects/classifieds/classifieds-1.png'
-id: 4
+id: 5
 link: "https://ecommerce-webapp-jb.herokuapp.com/"
 ---
 
@@ -18,4 +18,4 @@ As for technologies / libraries used, this project uses [React.js](https://react
 
 ![alt text here](/images/projects/classifieds/classifieds-3.png)
 
-[View project here](https://ecommerce-webapp-jb.herokuapp.com/)
+<!-- [View project here](https://ecommerce-webapp-jb.herokuapp.com/) -->

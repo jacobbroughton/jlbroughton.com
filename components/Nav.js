@@ -18,10 +18,10 @@ const Nav = () => {
       path: "/portfolio",
       name: "Portfolio",
     },
-    {
-      path: "/youtube",
-      name: "Youtube",
-    }
+    // {
+    //   path: "/youtube",
+    //   name: "Youtube",
+    // }
   ];
 
   const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
