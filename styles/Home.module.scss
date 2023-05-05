@@ -23,7 +23,7 @@
   display: flex;
   gap: 15px;
 
-   .CTA {
+  .CTA {
     height: 25px;
     background: var(--color-text-secondary);
     color: #fff;
@@ -39,7 +39,6 @@
   }
 }
 
-
 // About
 .about h2 {
   font-size: 2rem;
@@ -53,10 +52,16 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  color: var(--color-text-primary)
+  color: var(--color-text-primary);
 }
 
-.about .timePassedButton:hover {
+.about a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.about .timePassedButton:hover,
+.about a:hover {
   font-style: italic;
 }
 
@@ -74,23 +79,22 @@
   .about h2 {
     font-size: 2rem;
   }
-  
+
   .about p {
     font-size: 1rem;
   }
 }
 
 @include for-phone-only {
-  
   // .header .imageOfMeParent {
   //   // max-width: 150px;
   // }
-  
+
   // About
   .about h2 {
     font-size: 1.5rem;
   }
-  
+
   .about p {
     font-size: 1.2rem;
   }

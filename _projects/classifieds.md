@@ -2,7 +2,7 @@
 title: 'Classifieds'
 excerpt: 'This project was my attempt to replicate the functionality / look of the facebook marketplace UI.'
 coverImage: '/images/projects/classifieds/classifieds-1.png'
-id: 5
+id: 6
 link: "https://ecommerce-webapp-jb.herokuapp.com/"
 ---
 
