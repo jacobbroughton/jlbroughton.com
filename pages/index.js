@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Meta from "../components/Meta";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
-import meImage from "/public/images/me.jpeg";
+import meImage from "/public/images/me-2.jpg";
 import SocialIcons from "../components/SocialIcons";
 import Layout from "../components/Layout";
 import Link from "next/link";
@@ -56,11 +56,13 @@ export default function Home() {
             <Image
               alt="A picture of me"
               src={meImage}
-              height={300}
-              width={300}
+              fill
               className="image"
               placeholder="blur"
               priority={true}
+              style={{
+                objectFit: "contain"
+              }}
             />
           </div>
           <h1>Hello, i&apos;m Jacob 👋</h1>

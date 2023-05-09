@@ -23,7 +23,7 @@
 }
 
 .projectListItem .imageParent {
-  width: 45%;
+  width: 50%;
   height: auto;
   align-self: center;
   border-radius: 3px;
@@ -33,6 +33,15 @@
 .projectListItem .readMore {
   text-decoration: underline;
   // color: $lightgrey;
+}
+
+.projectListItem .readMore {
+  text-decoration: underline;
+  transition: opacity 0.05s ease;
+}
+
+.projectListItem .readMore:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 640px) {

@@ -26,8 +26,9 @@
 
 .socialIcons svg {
   fill: currentColor;
+  transition: opacity 0.05s ease;
 }
 
 .socialIcons svg:hover {
-  // fill: #333;
+  opacity: 0.75;
 }
