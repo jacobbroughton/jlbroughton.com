@@ -14,7 +14,7 @@ link: "https://zeddit.onrender.com/"
 
 As for technologies / libraries used. I used [React.js](https://reactjs.org/) for the front-end, as well as [Redux](https://redux.js.org/) for state management. For user authentication, i've gone for a session-based authentication pattern using [Passport.js](http://www.passportjs.org/), I am considering moving over to a JSON Web Token auth pattern but we'll see about that. For the backend, I've used [MySQL](https://www.mysql.com/) for the database, [Express.js](https://expressjs.com/) for routing, and [Node.js](https://nodejs.org/en/) for the server. Local storage is used to maintain the user's dark / light mode preferance through uses of the application.
 
-See the live project [here](https://zeddit.netlify.app).
+See the live project [here](https://zeddit.onrender.com).
 
 ![r/learnprogramming subreddit (Dark mode)](/images/projects/reddit-clone/reddit-clone-2.png)
 ---
