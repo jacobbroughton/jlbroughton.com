@@ -43,42 +43,40 @@
 }
 
 // About
-.about h2 {
-  font-size: 2rem;
-  font-weight: 400;
-}
+.about {
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 
-.about .timePassedButton {
-  background-color: transparent;
-  border: 0;
-  text-decoration: underline;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--color-text-primary);
-}
+  .timePassedButton {
+    background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-text-primary);
+    &:hover {
+      font-style: italic;
+    }
+  }
+  a {
+    font-weight: 600;
+    text-decoration: underline;
 
-.about a {
-  font-weight: 600;
-  text-decoration: underline;
-}
+    &:hover {
+      font-style: italic;
+    }
+  }
 
-.about .timePassedButton:hover,
-.about a:hover {
-  font-style: italic;
-}
-
-.about p {
-  font-size: 1.1rem;
-  margin-top: 15px;
+  p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
 }
 
 @include for-tablet-only {
-  // .header .imageOfMeParent {
-  //   max-width: 200px;
-  // }
-
-  // About
   .about h2 {
     font-size: 2rem;
   }
@@ -89,11 +87,6 @@
 }
 
 @include for-phone-only {
-  // .header .imageOfMeParent {
-  //   // max-width: 150px;
-  // }
-
-  // About
   .about h2 {
     font-size: 1.5rem;
   }
