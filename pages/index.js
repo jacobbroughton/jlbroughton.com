@@ -94,7 +94,7 @@ export default function Home() {
           <p>At work, I build analytics and reporting tools that various teams need. We often use <strong>React</strong> as our front-end library, <strong>Redux</strong> for state management <strong>PHP</strong> as our API layer, <strong>SQL Server</strong> for the data, and of course <strong>CSS</strong>.</p>
           <p>
             While i&apos;m not working, I love to mountain bike. Mainly jumping
-            and riding downhill / enduro trails. Just like coding, you fall and you get right back up and do it again the next day (hopefully without the falling part). Recently i&apos;ve also gotten super into riding my OneWheel, if you haven&apos;t tried one, I definitely recommend it if you get the chance.
+            and riding downhill / enduro trails. Just like coding, you fall and you get right back up and do it again the next day (hopefully without the falling part).
           </p>
         </section>
       </div>
