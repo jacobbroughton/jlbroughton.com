@@ -16,4 +16,4 @@ This app was built with React, Typescript, Express.js, Node.js, Redux Toolkit, M
 
 ![alt text here](/images/projects/notes-app/notes-app-3.JPG)
 
-[View project here](https://notes-app-jb.onrender.com/)
+[View project here](https://notes-app-jb-8363f34d89d9.herokuapp.com/)
