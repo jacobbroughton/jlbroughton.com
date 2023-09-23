@@ -26,7 +26,7 @@ const Meta = ({ title, description, keywords }) => {
 
 Meta.defaultProps = {
   title: "Jacob Broughton - Portfolio",
-  description: "Hello, i'm Jacob. I'm a web developer at Lowe's Companies, Inc. and create web applications using React & Redux, PHP, SQL / SQL Server, and CSS.",
+  description: "Hi, i'm Jacob. I'm a web developer at Lowe's Companies, Inc. and create web applications using React & Redux, PHP, SQL / SQL Server, and CSS.",
   keywords: "web developer, react developer, developer, programming, portfolio"
 
 }
