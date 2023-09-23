@@ -15,6 +15,7 @@ export default function Home() {
     )}`,
   });
   const [randomEmoji, setRandomEmoji] = useState(null);
+  const [emojiButtonClickedCount, setEmojiButtonClickedCount] = useState(0);
 
   function handleTimeUnitButtonClick() {
     switch (currentTime.unit) {
@@ -50,6 +51,7 @@ export default function Home() {
   }
 
   useEffect(() => {
+    console.log(emojiButtonClickedCount);
     function getRandomEmoji() {
       let emojiArray = ["🚲", "🏍️", "🏎️", "👽", "👾", "👁️", "🧌", "🐉"];
       let randomInt = Math.floor(Math.random() * emojiArray.length);
@@ -65,7 +67,7 @@ export default function Home() {
     }
 
     getRandomEmoji();
-  }, []);
+  }, [emojiButtonClickedCount]);
 
   return (
     <Layout>
@@ -86,11 +88,17 @@ export default function Home() {
             />
           </div>
           <h1>
-            Hi, i&apos;m Jacob 👨‍💻<span>{randomEmoji}</span>
+            Hi, i&apos;m Jacob 👨‍💻
+            <button
+              className={styles.emojiButton}
+              onClick={() => setEmojiButtonClickedCount((prevCount) => prevCount + 1)}
+            >
+              {randomEmoji}
+            </button>
           </h1>
           <p>
-            I&apos;m a web developer at Lowe&apos;s Companies, Inc., and living in
-            Charlotte, NC.
+            I work as a web developer for Lowe&apos;s Companies, Inc. and currently live
+            in Charlotte, NC.
           </p>
           <div className={styles.socialAndCTA}>
             <SocialIcons />
@@ -116,7 +124,7 @@ export default function Home() {
             Web Development&apos; bootcamp at UNCC. It was kind of an
             &apos;on-a-whim&apos; decision to go to that bootcamp since I, at the time,
             was actually thinking of becoming a welder. I saw an ad on Reddit for the
-            bootcamp and figured it might be a good idea. Prior to that, though, I was
+            class and figured it might be a good idea. Prior to that, though, I was
             really into computers and technology in general, but my coding experience was
             next to non-existant other than a single class in middle-school.
           </p>

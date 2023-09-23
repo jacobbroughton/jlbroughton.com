@@ -9,28 +9,33 @@ $lm-text: #000;
 
 $lightgrey: #6b7280;
 
-
-// Media queries 
-@mixin for-phone-only { 
-  @media screen and (max-width: 639px) { @content };
+// Media queries
+@mixin for-phone-only {
+  @media screen and (max-width: 639px) {
+    @content;
+  }
 }
 
 @mixin for-tablet-only {
-  @media screen and (min-width: 640px) and (max-width: 767px) { @content };
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    @content;
+  }
 }
 
 @mixin for-small-window-only {
-  @media screen and (min-width: 768px) and (max-width: 1279px) { @content };
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @content;
+  }
 }
 
 @mixin for-desktop-up {
-  @media screen and (min-width: 1280px) { @content };
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
 }
 
-
-
-// Mixins 
-@mixin page-container { 
+// Mixins
+@mixin page-container {
   max-width: $max-container-width;
   display: flex;
   flex-direction: column;
@@ -49,8 +54,9 @@ $lightgrey: #6b7280;
     padding-top: 5rem;
     padding-bottom: 5rem;
     gap: 7rem;
+
   }
-    
+
   @include for-small-window-only {
     padding-right: 5rem;
   }
@@ -60,7 +66,7 @@ $lightgrey: #6b7280;
   }
 }
 
-@mixin project-container { 
+@mixin project-container {
   max-width: $max-container-width;
   display: flex;
   flex-direction: column;
@@ -78,7 +84,7 @@ $lightgrey: #6b7280;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
-    
+
   @include for-small-window-only {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -109,20 +115,20 @@ $lightgrey: #6b7280;
   @include for-tablet-only {
     h1 {
       font-size: 2.5rem;
-    }  
-  
+    }
+
     p {
       font-size: 1.5rem;
-    }  
+    }
   }
 
   @include for-phone-only {
     h1 {
       font-size: 2.2rem;
-    }  
-  
+    }
+
     p {
       font-size: 1.2rem;
-    }  
+    }
   }
 }
