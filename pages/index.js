@@ -89,12 +89,12 @@ export default function Home() {
           </div>
           <h1>
             Hi, i&apos;m Jacob 👨‍💻
-            <button
+            {/* <button
               className={styles.emojiButton}
               onClick={() => setEmojiButtonClickedCount((prevCount) => prevCount + 1)}
             >
               {randomEmoji}
-            </button>
+            </button> */}
           </h1>
           <p>
             I work as a web developer for Lowe&apos;s Companies, Inc. and currently live

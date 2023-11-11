@@ -1,9 +1,15 @@
 ---
-title: 'Tip Calculator'
+title: "Tip Calculator"
 excerpt: "I was inspired by the tip calculator that google shows and figured I could make my own. Lots of little edge cases to figure out, but overall a great project to work on."
-coverImage: '/images/projects/tip-calculator/tip-calculator-2.jpg'
+coverImage: "/images/projects/tip-calculator/tip-calculator-2.jpg"
 id: 5
 link: "https://tip-calculator-9mwq.onrender.com/"
+links:
+  [
+    { type: "link", url: "https://tip-calculator-9mwq.onrender.com/" },
+    { type: "github", url: "https://github.com/jacobbroughton/tip-calculator-youtube" },
+    { type: "youtube", url: "https://www.youtube.com/watch?v=wzwa4GYNSVI" },
+  ]
 ---
 
 <p>This project was actually built for a youtube tutorial, I do find it to be a pretty interesting app though overall so i figured it could live on my portfolio, I'm proud of how it came out.</p>
@@ -14,8 +20,6 @@ link: "https://tip-calculator-9mwq.onrender.com/"
 
 As for the tech that was used, its pretty basic overall. I used [Vite](https://vitejs.dev/) to scaffold a [React](https://reactjs.org/) app and thats pretty much the entire app. Otherwise its just vanilla JS and CSS.
 
-See the live project [here](https://tip-calculator-9mwq.onrender.com/).
+## ![Default view](/images/projects/tip-calculator/tip-calculator-1.jpg)
 
-![Default view](/images/projects/tip-calculator/tip-calculator-1.jpg)
----
 ![Error view](/images/projects/tip-calculator/tip-calculator-3.jpg)

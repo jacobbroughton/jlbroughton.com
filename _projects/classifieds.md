@@ -1,9 +1,10 @@
 ---
-title: 'Classifieds'
-excerpt: 'This project was my attempt to replicate the functionality / look of the facebook marketplace UI.'
-coverImage: '/images/projects/classifieds/classifieds-1.png'
+title: "Classifieds"
+excerpt: "This project was my attempt to replicate the functionality / look of the facebook marketplace UI."
+coverImage: "/images/projects/classifieds/classifieds-1.png"
 id: 6
 link: "https://ecommerce-webapp-jb.herokuapp.com/"
+links: [{ type: "github", url: "https://github.com/jacobbroughton/eCommerce-WebApp" }]
 ---
 
 <p>This project was my attempt to replicate the functionality / look of the facebook marketplace UI. This includes the ability to add new listings with images, tags, location, condition, etc.. Users can share the listing, as well as change the status of the item (Available, pending, and sold).</p>
