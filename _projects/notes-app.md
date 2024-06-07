@@ -3,10 +3,10 @@ title: "Notes App"
 excerpt: "A notetaking app using Typescript, Express.js, Lexical.js, Redux Toolkit, and more."
 coverImage: "/images/projects/notes-app/notes-app-1.JPG"
 id: 2
-link: "https://notes-app-jb-8363f34d89d9.herokuapp.com/"
+link: "https://notesjb.com/"
 links:
   [
-    { type: "link", url: "https://notes-app-jb-8363f34d89d9.herokuapp.com/" },
+    { type: "link", url: "https://notesjb.com/" },
     { type: "github-FE", url: "https://github.com/jacobbroughton/notes-app-client" },
     { type: "github-BE", url: "https://github.com/jacobbroughton/notes-app-backend" },
   ]

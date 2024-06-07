@@ -9,7 +9,6 @@ import projectStyles from "../../styles/Project.module.scss";
 import SVGIcon from "../../components/SVGIcon";
 
 const project = ({ frontmatter, slug, project }) => {
-  console.log({ frontmatter, slug, project });
 
   marked.setOptions({
     highlight: function (code, lang) {
