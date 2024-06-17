@@ -1,6 +1,6 @@
 ---
 title: "Tip Calculator"
-excerpt: "I was inspired by the tip calculator that google shows and figured I could make my own. Lots of little edge cases to figure out, but overall a great project to work on."
+excerpt: "A tip calculator I built for a youtube video. This was made with Vanilla JS & CSS"
 coverImage: "/images/projects/tip-calculator/tip-calculator-2.jpg"
 id: 5
 link: "https://tip-calculator-9mwq.onrender.com/"
@@ -12,13 +12,11 @@ links:
   ]
 ---
 
-<p>This project was actually built for a youtube tutorial, I do find it to be a pretty interesting app though overall so i figured it could live on my portfolio, I'm proud of how it came out.</p>
+<p>This was for a youtube tutorial, nothing crazy but i liked making it and i figured it could live here.</p>
+
+<p>Built with React JS</p>
 
 ![View with bill, tip, and number of people](/images/projects/tip-calculator/tip-calculator-2.jpg)
-
-### Technical Details
-
-As for the tech that was used, its pretty basic overall. I used [Vite](https://vitejs.dev/) to scaffold a [React](https://reactjs.org/) app and thats pretty much the entire app. Otherwise its just vanilla JS and CSS.
 
 ## ![Default view](/images/projects/tip-calculator/tip-calculator-1.jpg)
 

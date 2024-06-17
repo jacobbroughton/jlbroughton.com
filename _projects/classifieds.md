@@ -1,6 +1,6 @@
 ---
 title: "Classifieds"
-excerpt: "This project was my attempt to replicate the functionality / look of the facebook marketplace UI."
+excerpt: "(A bit outdated) Facebook marketplace clone built with React, Redux, Node.js, and Express"
 coverImage: "/images/projects/classifieds/classifieds-1.png"
 id: 6
 link: "https://ecommerce-webapp-jb.herokuapp.com/"

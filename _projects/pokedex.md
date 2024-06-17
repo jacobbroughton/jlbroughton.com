@@ -1,6 +1,6 @@
 ---
 title: "Pokedex"
-excerpt: "A revamped / updated version of the old Pokedex site that I made a couple years ago. (This one is a lot cooler)."
+excerpt: "Built with React (Next.js) and SCSS"
 coverImage: "/images/projects/pokedex/pokedex-dark.png"
 id: 3
 link: "https://pokedex-jb.vercel.app/"

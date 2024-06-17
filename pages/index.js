@@ -107,6 +107,13 @@ export default function Home() {
 
         <section className={styles.about}>
           <h2>About</h2>
+
+          <p>
+            I am an experienced web developer that has built and shipped applications
+            (primarily React-based) that have reached 100k+ unique users. Make sure to
+            check out the <Link href="/portfolio">portfolio</Link> page to see some of my
+            personal projects.
+          </p>
           <p>
             <button
               className={styles.timePassedButton}
@@ -118,26 +125,8 @@ export default function Home() {
               })}
             </button>{" "}
             {currentTime.unit} ago I started learning how to code at a &apos;Full Stack
-            Web Development&apos; bootcamp at UNCC. It was kind of an
-            &apos;on-a-whim&apos; decision to go to that bootcamp since I, at the time,
-            was thinking of becoming a welder. I saw an ad on Reddit for the class and
-            figured it might be a good idea. Prior to that, though, I was really into
-            computers and technology in general, but my coding experience was next to
-            non-existant other than a single class in middle-school.
-          </p>
-          <p>
-            For personal projects, I like to use build stuff with <strong>React</strong>,{" "}
-            <strong>Redux</strong>, and <strong>Node.js</strong> /{" "}
-            <strong>Express</strong> / <strong>MySQL</strong> backends. I have recently
-            started a youtube channel where I help beginners learn how to code as well.
-            Make sure to check out the <Link href="/portfolio">portfolio</Link> page to
-            see some of my personal projects.
-          </p>
-
-          <p>
-            While i&apos;m not coding, I love to mountain bike. Mainly jumping and riding
-            downhill / enduro trails. Just like coding, you fall and you get right back up
-            and do it again the next day (hopefully without the falling part).
+            Web Development&apos; bootcamp at UNCC, and have been building things ever
+            since.
           </p>
         </section>
       </div>
