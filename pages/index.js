@@ -109,8 +109,7 @@ export default function Home() {
           <h2>About</h2>
 
           <p>
-            I am an experienced web developer that has built and shipped applications that have reached 100k+ unique users. Here&apos;s a link to some personal projects: <Link href="/portfolio">portfolio</Link> page to see some of my
-            personal projects.
+            I am an experienced web developer that has built and shipped applications that have reached 100k+ unique users. Here are some of my <Link href="/portfolio">personal projects</Link>.
           </p>
           <p>
             <button

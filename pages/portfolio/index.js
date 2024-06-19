@@ -14,7 +14,7 @@ const portfolio = ({ projects }) => {
       <div className={portfolioStyles.container}>
         <section className={portfolioStyles.header}>
           <h1>Projects 📚</h1>
-          <p>A curated collection of projects that i&apos;m personally proud of, or helped shape me as a developer.</p>
+          <p>A collection of some of my projects</p>
           <SocialIcons/>
         </section>
         <ProjectList projects={projects}/>
