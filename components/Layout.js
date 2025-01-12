@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from "framer-motion"
 import styles from "../styles/Layout.module.scss"
 
+import { Analytics } from "@vercel/analytics/react"
+
 const Layout = ({children}) => {
 
   const variants = {
@@ -9,6 +11,7 @@ const Layout = ({children}) => {
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: -25 },
 }
+
 
   return (
     <motion.main
@@ -19,6 +22,7 @@ const Layout = ({children}) => {
       transition={{ type: 'linear' }}
       className={styles.main}
     >
+      <Analytics/>
       {children}
     </motion.main>
   )

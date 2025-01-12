@@ -13,8 +13,8 @@ function blog({ blogs }) {
     <Layout>
       <div className={blogListStyles.container}>
       <section className={blogListStyles.header}>
-          <h1>Blog 📝</h1>
-          <p>A (small) number of knowledge or code tidbits that you or someone might find useful.</p>
+          <h1>Blog</h1>
+          <p>Thoughts and things i want to share</p>
           <SocialIcons/>
         </section>
       </div>
