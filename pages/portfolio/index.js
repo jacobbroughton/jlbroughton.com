@@ -33,7 +33,7 @@ export const getStaticProps = async (context) => {
     const slug = filename.replace('.md', '')
  
     // gives unparsed markdown, exactly whats in the files
-    const markdownWithMeta = fs.readFileSync(
+    const markdownWithMeta = fs.readFileSync(  
       path.join('_projects', filename),
       'utf-8'
     )

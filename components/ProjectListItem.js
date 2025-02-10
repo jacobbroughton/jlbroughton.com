@@ -20,16 +20,21 @@ const ProjectListItem = ({ project }) => {
         </Link>
       </div>
       <div className={projectListItemStyles.imageParent}>
-        <Image
+        {/* <Image
           alt=""
           src={project.frontmatter.coverImage}
-          height={200}
-          width={500}
+          // height={200}
+          width={'auto'}
           placeholder="blur"
           priority={true}
           blurDataURL={project.frontmatter.coverImage}
           style={{ objectFit: "cover" }}
-        />
+        /> */}
+        <img src={project.frontmatter.coverImage} style={{
+          width: '100%',
+          maxWidth: '300px',
+          borderRadius: '5px',
+        }}/>
       </div>
     </article>
   );

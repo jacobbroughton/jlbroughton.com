@@ -1,5 +1,5 @@
 // Sizes
-$max-container-width: 800px;
+$max-container-width: 750px;
 
 // Colors
 $dark-primary: #141414;
@@ -17,13 +17,13 @@ $lightgrey: #6b7280;
 }
 
 @mixin for-tablet-only {
-  @media screen and (min-width: 640px) and (max-width: 767px) {
+  @media screen and (min-width: 640px) and (max-width: 799px) {
     @content;
   }
 }
 
 @mixin for-small-window-only {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 800px) and (max-width: 1279px) {
     @content;
   }
 }
@@ -50,7 +50,7 @@ $lightgrey: #6b7280;
   }
 
   @include for-tablet-only {
-    padding-right: 3.5rem;
+    // padding-right: 3.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
     gap: 7rem;
@@ -58,11 +58,11 @@ $lightgrey: #6b7280;
   }
 
   @include for-small-window-only {
-    padding-right: 5rem;
+    // padding-right: 5rem;
   }
 
   @include for-desktop-up {
-    padding-right: 10rem;
+    // padding-right: 10rem;
   }
 }
 

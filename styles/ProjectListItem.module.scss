@@ -3,7 +3,8 @@
 .projectListItem{
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .projectListItem .textParent {
@@ -23,11 +24,13 @@
 }
 
 .projectListItem .imageParent {
-  width: 50%;
-  height: auto;
+  // width: 50%;
+  // height: auto;
   align-self: center;
   border-radius: 3px;
   overflow: hidden;
+  // width: auto;
+  // height: 100px;
 }
 
 .projectListItem .readMore {
