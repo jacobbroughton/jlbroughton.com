@@ -96,7 +96,7 @@ export default function Home() {
               {randomEmoji}
             </button> */}
           </h1>
-          <p>I am a web developer currently living in Matthews, NC.</p>
+          <p>I am a software engineer at Lowe's Companies, Inc. in Charlotte, NC</p>
           <div className={styles.socialAndCTA}>
             <SocialIcons />
             <a className={styles.CTA} href="mailto:jacobbroughtondev@gmail.com">
@@ -109,7 +109,7 @@ export default function Home() {
           <h2>About</h2>
 
           <p>
-            I am an experienced web developer that has built and shipped applications that have reached 100k+ unique users. Here are some of my <Link href="/portfolio">personal projects</Link>.
+            I am an experienced web developer that has built and shipped applications that have reached 100k+ unique users and are still used each day after several years. I primarily work with front-end technologies such as React & GraphQL. Here are some of my <Link href="/portfolio">personal projects</Link>.
           </p>
           <p>
             <button
@@ -123,7 +123,7 @@ export default function Home() {
             </button>{" "}
             {currentTime.unit} ago I started learning how to code at a &apos;Full Stack
             Web Development&apos; bootcamp at UNCC, and have been building things ever
-            since.
+            since. I am also a student at CPCC pursuing a degree in Computer Science.
           </p>
         </section>
       </div>
