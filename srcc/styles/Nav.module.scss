@@ -1,0 +1,101 @@
+@import "../styles/variables";
+
+.nav {
+  width: 100%;
+  position: fixed;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.25s ease-in-out;
+
+    /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    background-color: var(--color-bg-primary-rgb)
+  }
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav .initials {
+  display: none;
+}
+
+.nav span {
+  font-weight: 600;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 35px;
+}
+
+.nav svg {
+  width: 100%;
+}
+
+.nav ul  svg:hover {
+  fill: orange;
+}
+
+.nav li {
+  margin-top: 3px;
+  padding-bottom: 3px;
+  border-bottom: 3px transparent solid;
+  position: relative;
+}
+
+.nav .theme-icon {
+  background-color: blue;
+}
+
+.nav .underline {
+  background-color: currentColor;
+  height: 3px;
+  width: 100%;
+  margin-top: 3px;
+  // position: absolute;
+}
+
+
+
+@include for-phone-only {
+  .nav {
+    padding: 20px 30px;
+  }
+
+  .nav .fullName {
+    display: none;
+  }
+
+  .nav .initials {
+    display: inline-block;
+  }
+}
+
+@include for-tablet-only {
+  .nav {
+    padding: 20px 3rem;
+  }
+}
+
+@include for-small-window-only {
+  .nav {
+    padding: 20px 8rem;
+  }
+}
+
+@include for-desktop-up {
+  .nav {
+    padding: 20px 13rem;
+  }
+}

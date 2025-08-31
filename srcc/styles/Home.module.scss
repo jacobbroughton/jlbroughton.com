@@ -1,0 +1,122 @@
+@import "../styles/variables";
+
+.container {
+  @include page-container;
+}
+
+.header {
+  @include page-header;
+
+  .emojiButton {
+    padding: 0;
+    font-size: 3rem;
+    border: 0;
+    background-color: transparent;
+    transition: filter 0.1s ease;
+    cursor: pointer;
+  }
+
+  .emojiButton:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.header .imageOfMeParent {
+  width: 100%;
+  max-width: 400px;
+  height: 265px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header .imageOfMeParent .imageOfMe {
+  filter: brightness(1.05);
+}
+
+.header .socialAndCTA {
+  display: flex;
+  gap: 15px;
+
+  .CTA {
+    height: 25px;
+    background: var(--color-text-secondary);
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+  }
+
+  .CTA:hover {
+    text-decoration: underline;
+  }
+}
+
+// About
+.about {
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .timePassedButton {
+    background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-text-primary);
+    &:hover {
+      font-style: italic;
+    }
+  }
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:hover {
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+}
+
+@include for-tablet-only {
+  .header {
+    .emojiButton {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+@include for-phone-only {
+  .header {
+    .emojiButton {
+      font-size: 2.2rem;
+    }
+  }
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+}

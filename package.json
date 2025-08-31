@@ -17,14 +17,19 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.2.0",
     "marked": "^4.2.5",
-    "next": "^13.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "sass": "^1.39.0",
     "sharp": "^0.31.3"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "^15.5.2"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }

@@ -1,0 +1,81 @@
+@import "../styles/variables";
+
+.project {
+  @include project-container;
+  gap: 25px;
+  align-self: center;
+}
+
+.project .header {
+  @include page-header;
+}
+
+.project-metadata-container {
+  width: 100%;
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  a {
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: opacity 0.05s ease;
+    align-items: end;
+    span {
+      font-size: 0.75em;
+      margin-left: 4px;
+    }
+
+    svg {
+      fill: currentColor;
+      transition: opacity 0.05s ease;
+    }
+
+    svg:hover {
+      opacity: 0.75;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.project .body {
+  margin-top: 30px;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 20px;
+
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .viewProjectLink {
+    font-size: 1rem;
+    text-decoration: underline;
+
+    &::after {
+      content: " ->";
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+  }
+}

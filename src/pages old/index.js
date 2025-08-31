@@ -7,7 +7,18 @@ import SocialIcons from "../components/SocialIcons";
 import Layout from "../components/Layout";
 import Link from "next/link";
 
-export default function Home() {
+export async function getServerSideProps() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await res.json()
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+export default function Home({ data  }) {
   const [currentTime, setCurrentTime] = useState({
     unit: "years",
     value: `${((new Date() - new Date(2018, 11, 26)) / (86400000 * 7 * 4 * 12)).toFixed(
@@ -16,6 +27,10 @@ export default function Home() {
   });
   const [randomEmoji, setRandomEmoji] = useState(null);
   const [emojiButtonClickedCount, setEmojiButtonClickedCount] = useState(0);
+
+  useEffect(() => {
+    console.log({data})
+  }, [])
 
   function handleTimeUnitButtonClick() {
     switch (currentTime.unit) {
@@ -96,7 +111,7 @@ export default function Home() {
               {randomEmoji}
             </button> */}
           </h1>
-          <p>I am a software engineer at Lowe's Companies, Inc. in Charlotte, NC</p>
+          <p>I am a software engineer at Lowe&apos;s Companies, Inc. in Charlotte, NC</p>
           <div className={styles.socialAndCTA}>
             <SocialIcons />
             <a className={styles.CTA} href="mailto:jacobbroughtondev@gmail.com">
