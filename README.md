@@ -1,3 +1,4 @@
+* broken right now because i suck at nextjs *
 # My Personal Website
 
 [www.jlbroughton.com](https://www.jlbroughton.com)
